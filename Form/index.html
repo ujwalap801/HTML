@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Form Demo</h1>
+    <!-- login form -->
+    <Form>
+               <!-- username -->
+                <div>
+                    <label for="username">Username</label>
+                    <input 
+                     type="text"
+                     id="username"
+                     name="username"
+                     autocomplete="off"
+                     placeholder="enter name"
+              
+                     required
+                     minlength="4"
+                     maxlength="6"
+                      >
+                </div>
+
+                <!-- password -->
+                 <div>
+                    <label for="password">password</label>
+                    <input
+                     type="password"
+                      name="password" 
+                      id="password"
+                      placeholder="enter password">
+                 </div>
+   
+
+                 <!-- profile pic -->
+                  <div>
+                     <label for="profile">Upload profile</label>
+                    <input type="file" name="profile" id="profile">
+                </div>
+
+
+                <!-- skills -->
+                 <div>
+                    <label>select your skills</label>
+                              <!-- Javascript -->
+                               <div>
+                                 <input type="checkbox" name="js" id="js">
+                                 <label for="js">Javascript</label>
+                               </div>
+
+
+                               <!-- Reactjs -->
+                               <div>
+                                <input type="checkbox" name="reactjs" id="reactjs">
+                                <label for="reactjs">Reactjs</label>
+                              </div>
+                </div>
+
+
+                <!-- gender -->
+                <div>
+                   <label>Select your gender</label>
+
+                <div>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+               </div>
+                      
+               <div>
+                <input type="radio" name="gender" id="female">
+                <label for="female">female</label>
+            </div>
+            </div>
+
+            <!-- select state -->
+             <div>
+                <label for="state">Select state</label>
+                <select name="state" id="state">
+                    <option value="">Telagana</option>
+                    <option value="">TS</option>
+                    <option value="">AP</option>
+                </select>         
+              </div>
+
+
+
+              <!-- feedback -->
+              <div>
+                    <label for="feedback">Feedback</label>
+                    <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea>   
+             </div>
+      <!-- submit -->
+       <button type="submit">Login</button>
+   
+    </Form>
+</body>
+</html>
