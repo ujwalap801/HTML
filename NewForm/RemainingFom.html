@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="onSubmit(event)">
+        <label for="name">Enter your name</label>
+        <input placeholder="enter name" type="text" id="name" name="username">
+        <br>
+        <br>
+        <label for="password">Enter your password</label>
+        <input placeholder="enter password" id="password" disabled type="password" name="password">
+
+        <br>
+        <br>
+
+        <div>
+            <input type="checkbox" id="js">
+            <label for="js"> JS</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="java" checked>
+            <label for="java"> Java</label>
+        </div>
+
+
+        <div>
+            <input type="checkbox" id="Python">
+            <label for="Python"> Python</label>
+        </div>
+        <br>
+        <br>
+
+
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female">
+        <label for="male">Female</label>
+
+        <br>
+        <br>
+        <label>Selection the states</label>
+        <select>
+
+            <option>Telangana</option>
+            <option selected>AP</option>
+            <option>Chennai</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label  for="range">Volume</label>
+        <input type="range" id="range" min="0" max="10">
+
+
+         <br>
+        <br>
+
+        <label for="Feedback">Give me Feedback</label>
+        <textarea cols="10" rows="5" id="Feedback"></textarea>
+
+        
+         <br>
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <br>
+        <button type="button" onclick="alert('Clicked!')">Click Me</button>
+        <br><br>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script>
+
+
+        function onSubmit(evt) {
+            evt.preventDefault();
+            const form = document.querySelector("form");
+            const data = new FormData(form);
+            console.log(data);
+            console.log(data.get("username"));
+            console.log(evt);
+        }
+    </script>
+</body>
+
+</html>
